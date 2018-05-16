@@ -1,3 +1,14 @@
+# Author: Lucy Lee
+# Updated: 5/16/2018
+# This script creates a new table that combines watershed annual summary
+# tables found in ArcGIS SWAT outputs (.std). A year column is added
+# to the new table and monthly and annual total rows are removed.
+# The output is saved as a CSV.
+#
+# Notes: The leap_year function from lubridate used here is an older
+# version (current documentation is for leap.year). If R is ever updated,
+# the syntax of this function may need to be changed to the newer version.
+
 library(lubridate)
 
 # Read in file
